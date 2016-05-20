@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% javascripts '../app/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}

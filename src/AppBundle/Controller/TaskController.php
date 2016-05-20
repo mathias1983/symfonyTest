@@ -19,7 +19,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class TaskController extends Controller
 {
     /**
-     * @Route("/task/new/")
+     * @Route("/task/new")
      */
     public function newAction(Request $request)
     {
