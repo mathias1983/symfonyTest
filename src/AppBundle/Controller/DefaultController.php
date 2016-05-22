@@ -34,7 +34,6 @@ class DefaultController extends Controller
         $task = new Task();
 
         /*
-
         $form = $this->createFormBuilder($task)
             ->add('task', null, array('attr' => array('maxlength' => 4)))
             ->add('dueDate', DateType::class, array(
@@ -45,8 +44,6 @@ class DefaultController extends Controller
             ->add('saveAndAdd', SubmitType::class, array('label' => 'Save and Add'))
             ->getForm();
         */
-
-
         $form = $this->createForm(TaskTypeII::class, $task);
 
         $form->handleRequest($request);
